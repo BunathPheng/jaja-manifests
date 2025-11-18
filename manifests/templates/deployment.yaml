@@ -1,0 +1,24 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jaja
+  labels:
+    app: jaja
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jaja
+  template:
+    metadata:
+      labels:
+        app: jaja
+    spec:
+      containers:
+        - name: jaja
+          image: docker.io/phengbunath/jaja:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
