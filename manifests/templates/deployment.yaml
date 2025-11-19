@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: jaja
-          image: docker.io/phengbunath/jaja:6
+          image: docker.io/phengbunath/jaja:8
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
